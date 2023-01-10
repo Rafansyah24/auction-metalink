@@ -31,6 +31,7 @@
                     @foreach ($data as $row)
 
                     <tr>
+                        
                         <th scope="row">{{$no++}}</th>
                         <th>{{$row->preview_item}}</th>
                         <th>{{$row->price}}</th>
