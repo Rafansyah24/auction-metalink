@@ -141,7 +141,7 @@
                                     <button class="btn btn-primary">
                                         <ion-icon name="flash" aria-hidden="true"></ion-icon>
 
-                                        <span class="span">Place Bid</span>
+                                        <span class="span"> <a href="#">Place Bid</a></span>
                                     </button>
 
                                     <div class="countdown">

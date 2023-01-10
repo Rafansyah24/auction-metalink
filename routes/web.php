@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landingpage');
-});
+// Route::get('/', function () {
+//     return view('landingpage');
+// });
+
+// Route::get('detail', function(){
+//     return view('item');
+// });
+
+Route::get('/create_item', [ItemController::class, 'create_item'])->name('create_item');
+Route::get('/tambah_detail', [ItemController::class, 'barang'])->name('tambah_detail');
+Route::post('/insert_detail', [ItemController::class, 'insert_detail'])->name('insert_detail'); 
+
+
+
